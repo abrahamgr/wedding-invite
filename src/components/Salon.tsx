@@ -25,6 +25,7 @@ export function Salon() {
         <Link
           href='https://maps.app.goo.gl/d9ac1o3QX83omvvu5'
           className='underline'
+          target='_blank'
         >
           Abrir en Google Maps
         </Link>

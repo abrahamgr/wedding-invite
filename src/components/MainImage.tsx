@@ -1,5 +1,6 @@
 import { handWriteFont } from '@/fonts'
 import Image from 'next/image'
+import { Audio } from '@/components/Audio'
 
 interface MainImageProps {
   img: string
@@ -26,6 +27,7 @@ export function MainImage({ img, title }: MainImageProps) {
           className='h-auto w-full'
         />
       </div>
+      <Audio />
     </div>
   )
 }

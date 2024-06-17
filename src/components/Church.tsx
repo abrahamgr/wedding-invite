@@ -25,6 +25,7 @@ export function Church() {
         <Link
           href='https://maps.app.goo.gl/nJNdwHyYnAQs1KLq8'
           className='underline'
+          target='_blank'
         >
           Abrir en Google Maps
         </Link>

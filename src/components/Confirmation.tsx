@@ -8,10 +8,12 @@ interface ButtonProps extends PropsWithChildren {
 }
 
 function Button({ children, type, invites }: ButtonProps) {
+  const phoneNumber = type === 'novio' ? '8184619633' : '8123309117'
   return (
     <Link
-      href={`https://wa.me/52${type === 'novio' ? '8184619633' : '8123309117'}?text=Confirmo my asistencia para ${invites} personas`}
+      href={`https://wa.me/52${phoneNumber}?text=Confirmo my asistencia para ${invites} personas`}
       className='my-1 mr-2 rounded-md border-2 border-slate-300 px-1'
+      target='_blank'
     >
       {children}
     </Link>
