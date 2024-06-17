@@ -10,13 +10,13 @@ export function OurHistory() {
         <br />
         <p className='text-md md:text-xl'>
           En un mundo digital, encontramos un amor real, desde el primer
-          &apos;match&apos;, fuimos nuestro destino, nuestra historia de amor
-          única, nacida en redes sociales pero destinada a perdurar para
-          siempre. Nuestro match fue solo el comienzo de una historia de amor
-          eterna.
+          <i>match</i>, fuimos nuestro destino, nuestra historia de amor única,
+          nacida en redes sociales pero destinada a perdurar para siempre.
+          Nuestro match fue solo el comienzo de una historia de amor eterna.
         </p>
+        <br />
         <p className='text-md md:text-xl'>
-          ¡Estamos listos para decir &apos;sí, acepto&apos;!
+          ¡Estamos listos para decir <i>sí, acepto</i>!
         </p>
       </div>
       <Image
