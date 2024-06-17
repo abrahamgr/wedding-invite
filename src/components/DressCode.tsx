@@ -1,10 +1,29 @@
+import Image from 'next/image'
+
 export function DressCode() {
   return (
-    <div className='flex flex-col items-center justify-center bg-yellow-50 p-10'>
-      <h2>Código de vestimenta</h2>
-      <div className='flex'>
-        <div className='w-1/2 items-center justify-center'>1</div>
-        <div className='w-1/2 items-center justify-center'>2</div>
+    <div className='flex w-full flex-col items-center justify-center bg-yellow-50 p-5 md:p-10'>
+      <h2 className='text-xl md:text-2xl'>Código de vestimenta</h2>
+      <br />
+      <div className='flex w-full'>
+        <div className='w-1/2'>
+          <Image
+            src='/suit.svg'
+            className='m-auto my-0'
+            alt='suit'
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className='w-1/2'>
+          <Image
+            src='/dress.svg'
+            className='m-auto my-0'
+            alt='dress'
+            width={100}
+            height={100}
+          />
+        </div>
       </div>
       <p>Formal</p>
       <div className='flex items-center'>
