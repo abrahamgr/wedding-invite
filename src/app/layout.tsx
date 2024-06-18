@@ -5,10 +5,23 @@ import './globals.css'
 import Script from 'next/script'
 
 const isNewRelicEnabled = process.env.NEW_RELIC_ENABLED === 'true'
+const metadataBase =
+  process.env.NODE_ENV === 'production'
+    ? `https://${process.env.VERCEL_URL}`
+    : `http://localhost:${process.env.PORT || 3000}`
+
+const baseMetadata = {
+  title: 'Jaquelline & Abraham',
+  description: 'Estás invitado a nuestra boda',
+}
 
 export const metadata: Metadata = {
-  title: 'Jaquelline & Abraham',
-  description: 'Estas invitado a nuestra boda',
+  ...baseMetadata,
+  metadataBase: new URL(metadataBase),
+  openGraph: {
+    ...baseMetadata,
+    images: '/_next/image?url=%2Finf-91.jpg&w=1200&q=50',
+  },
 }
 
 export default async function RootLayout({
@@ -38,8 +51,12 @@ export default async function RootLayout({
           </Script>
         </head>
       ) : null}
-      <body className={`${generalFont.className} flex h-screen flex-col`}>
-        <main className='flex flex-col justify-center'>{children}</main>
+      <body
+        className={`${generalFont.className} flex h-screen flex-col bg-yellow-50 md:items-center`}
+      >
+        <main className='flex flex-col justify-center md:max-w-screen-xl'>
+          {children}
+        </main>
       </body>
     </html>
   )

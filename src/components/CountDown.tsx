@@ -48,7 +48,7 @@ export function CountDown() {
   }, [])
 
   return (
-    <div className='flex w-full flex-col items-center bg-yellow-50 md:flex-row-reverse'>
+    <div className='flex w-full flex-col items-center md:flex-row-reverse'>
       <div className='md:w-1/3'>
         <Image
           src='/inf-75.jpg'

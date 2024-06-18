@@ -2,7 +2,7 @@ import { handWriteFont } from '@/fonts'
 
 export function ThankYou() {
   return (
-    <div className='flex flex-col items-center justify-center bg-yellow-50 p-10 md:text-xl'>
+    <div className='flex flex-col items-center justify-center p-10 md:text-xl'>
       <p>Gracias por ser parte de este gran día</p>
       <p>Con cariño</p>
       <p

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export function DressCode() {
   return (
-    <div className='flex w-full flex-col items-center justify-center bg-yellow-50 p-5 md:p-10'>
+    <div className='flex w-full flex-col items-center justify-center p-5 md:p-10'>
       <h2 className='text-xl md:text-2xl'>Código de vestimenta</h2>
       <p>Formal</p>
       <br />
@@ -10,7 +10,7 @@ export function DressCode() {
         <div className='w-1/2'>
           <Image
             src='/suit.png'
-            className='m-auto my-0'
+            className='m-auto my-0 h-auto'
             alt='suit'
             width={65}
             height={50}
@@ -19,7 +19,7 @@ export function DressCode() {
         <div className='w-1/2'>
           <Image
             src='/dress.svg'
-            className='m-auto my-0'
+            className='m-auto my-0 h-auto'
             alt='dress'
             width={100}
             height={100}

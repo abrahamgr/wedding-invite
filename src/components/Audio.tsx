@@ -8,7 +8,6 @@ export function Audio() {
   const ref = useRef<HTMLAudioElement>(null)
 
   const handlePlayPause = () => {
-    console.log('audio', ref.current)
     const { current: audio } = ref
     if (!audio) return
     if (isPlaying) audio.pause()

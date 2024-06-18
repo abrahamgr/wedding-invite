@@ -14,6 +14,9 @@ interface PageProps {
 }
 
 export default function Home({ searchParams }: PageProps) {
+  const invites = searchParams.i
+    ? Buffer.from(searchParams.i, 'base64').toString()
+    : '1'
   return (
     <>
       <MainImage img='/inf-88.jpg' title='J & A' />
@@ -32,7 +35,7 @@ export default function Home({ searchParams }: PageProps) {
           '/inf-92.jpg',
         ]}
       />
-      <Confirmation invites={searchParams.i} />
+      <Confirmation invites={invites} />
       <ThankYou />
     </>
   )

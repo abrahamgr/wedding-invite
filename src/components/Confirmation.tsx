@@ -11,7 +11,7 @@ function Button({ children, type, invites }: ButtonProps) {
   const phoneNumber = type === 'novio' ? '8186936753' : '8123309117'
   return (
     <Link
-      href={`https://wa.me/52${phoneNumber}?text=Confirmo my asistencia para ${invites} personas`}
+      href={`https://wa.me/52${phoneNumber}?text=${invites} lugares reservados - Boda Jaquelline y Abraham. Quiero confirmar la asistencia a la boda, anexo el nombre de las personas que asistirán para su registro, gracias`}
       className='my-1 mr-2 rounded-md border-2 border-slate-300 px-1'
       target='_blank'
     >
@@ -24,7 +24,7 @@ interface ConfirmationProps {
   invites: string
 }
 
-export function Confirmation({ invites = '1' }: ConfirmationProps) {
+export function Confirmation({ invites }: ConfirmationProps) {
   return (
     <div className='flex flex-col items-center bg-yellow-50 py-5 text-center *:px-2 md:text-xl'>
       <p className='text-xl md:text-2xl'>Sugerencia de regalo</p>

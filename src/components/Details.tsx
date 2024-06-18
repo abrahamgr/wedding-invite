@@ -3,11 +3,9 @@ import Image from 'next/image'
 
 export function Details() {
   return (
-    <div className='flex flex-col border-2 border-amber-300 bg-yellow-50 py-5 text-center md:py-10'>
-      <p id='save-date' className='py-4'>
-        En compañia de Dios y nuestors padres
-      </p>
-      <div className='flex flex-row text-sm md:text-inherit'>
+    <div className='flex flex-col border-2 border-amber-300 py-5 text-center md:py-10 md:text-xl'>
+      <p className='py-4'>En compañia de Dios y nuestors padres</p>
+      <div className='flex flex-row text-sm md:text-xl'>
         <div className='w-1/2 justify-center'>
           <p>
             Ricardo G. Castaneda Espino (
