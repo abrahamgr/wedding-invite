@@ -16,7 +16,7 @@ export function Salon() {
           className='h-auto w-full'
         />
       </div>
-      <div className='flex flex-col items-center justify-center px-5 py-7 md:w-1/2 md:text-xl'>
+      <div className='flex flex-col items-center justify-center px-5 py-7 text-center md:w-1/2 md:text-xl'>
         <p>Recepción</p>
         <p>Grand Imperio Social Venue</p>
         <p>Benito Juárez 1937, Crispín Treviño, Guadalupe, N.L.</p>
@@ -27,7 +27,7 @@ export function Salon() {
           className='underline'
           target='_blank'
         >
-          Abrir en Google Maps
+          Google Maps
         </Link>
       </div>
     </div>

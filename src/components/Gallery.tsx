@@ -32,11 +32,10 @@ export function Gallery({ images }: GalleryProps) {
             key={img}
             src={img}
             alt={`img-${idx}`}
-            quality={80}
+            quality={50}
             priority
             width={700}
             height={475}
-            sizes='100vw'
             className='h-auto w-full'
           />
         ))}

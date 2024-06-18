@@ -21,9 +21,9 @@ export function Audio() {
       <Image
         alt='play-pause'
         src={isPlaying ? '/pause.svg' : '/play.svg'}
-        height={50}
-        width={50}
-        className='absolute right-[40%] top-[23%] cursor-pointer md:right-[48%] md:top-[60%]'
+        height={40}
+        width={40}
+        className='absolute right-[42%] top-[23%] cursor-pointer md:right-[48%] md:top-[60%]'
         onClick={handlePlayPause}
       />
       <audio src='/audio.mp3' ref={ref}></audio>

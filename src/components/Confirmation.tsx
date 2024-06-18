@@ -8,7 +8,7 @@ interface ButtonProps extends PropsWithChildren {
 }
 
 function Button({ children, type, invites }: ButtonProps) {
-  const phoneNumber = type === 'novio' ? '8184619633' : '8123309117'
+  const phoneNumber = type === 'novio' ? '8186936753' : '8123309117'
   return (
     <Link
       href={`https://wa.me/52${phoneNumber}?text=Confirmo my asistencia para ${invites} personas`}

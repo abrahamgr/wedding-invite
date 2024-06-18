@@ -19,7 +19,7 @@ export function MainImage({ img, title }: MainImageProps) {
         <Image
           src={img}
           alt='portada'
-          quality={80}
+          quality={50}
           priority
           width={700}
           height={475}

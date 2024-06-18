@@ -16,7 +16,7 @@ export function Church() {
           className='h-auto w-full'
         />
       </div>
-      <div className='flex flex-col items-center justify-center px-5 py-7 md:w-1/2 md:text-xl'>
+      <div className='flex flex-col items-center justify-center px-5 py-7 text-center md:w-1/2 md:text-xl'>
         <p>Ceremonia</p>
         <p>Templo Expiatorio ​de San Luis Gonzaga</p>
         <p>Miguel Hidalgo y Costilla 280, Centro, Monterrey, N.L.</p>
@@ -27,7 +27,7 @@ export function Church() {
           className='underline'
           target='_blank'
         >
-          Abrir en Google Maps
+          Google Maps
         </Link>
       </div>
     </div>

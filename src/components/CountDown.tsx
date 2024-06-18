@@ -53,7 +53,8 @@ export function CountDown() {
         <Image
           src='/inf-75.jpg'
           alt='img'
-          unoptimized
+          sizes='(max-width: 768px) 100vw, 33vw'
+          quality={50}
           width={700}
           height={475}
           className='z-0 h-auto w-full'
@@ -63,9 +64,7 @@ export function CountDown() {
         <div className='flex w-full flex-row items-center justify-center p-5 text-3xl md:p-10'>
           <p>Viernes</p>
           <p>&nbsp;| 16 |&nbsp;</p>
-          <p>
-            Agosto <br /> 2024
-          </p>
+          <p>Agosto</p>
         </div>
         <div className='flex w-full flex-col items-center justify-center p-5 md:p-10'>
           <Image
