@@ -30,7 +30,7 @@ export function Confirmation({ invites = '1' }: ConfirmationProps) {
       <p className='text-xl md:text-2xl'>Sugerencia de regalo</p>
       <br />
       <p>Tu presencia es nuestro regalo mas grande</p>
-      <br />
+      <Image src='/gift.png' alt='gift' className='' height={100} width={100} />
       <p>
         Si deseas obsequiarnos algun presente, agradeceriamos que fuera en
         efectivo

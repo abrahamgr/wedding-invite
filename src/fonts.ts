@@ -1,4 +1,4 @@
-import { Cabin, Dancing_Script, Great_Vibes } from 'next/font/google'
+import { Bad_Script, Italianno } from 'next/font/google'
 
-export const generalFont = Cabin({ subsets: ['latin'] })
-export const handWriteFont = Great_Vibes({ subsets: ['latin'], weight: '400' })
+export const generalFont = Bad_Script({ subsets: ['latin'], weight: '400' })
+export const handWriteFont = Italianno({ subsets: ['latin'], weight: '400' })

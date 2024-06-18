@@ -25,9 +25,11 @@ export default function Home({ searchParams }: PageProps) {
       <DressCode />
       <Gallery
         images={[
-          // '/inf-75.jpg',
-          '/inf-88.jpg',
-          '/inf-91.jpg',
+          '/inf-67.jpg',
+          '/inf-68.jpg',
+          '/inf-70.jpg',
+          '/inf-78.jpg',
+          '/inf-92.jpg',
         ]}
       />
       <Confirmation invites={searchParams.i} />
