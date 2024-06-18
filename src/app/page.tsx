@@ -19,7 +19,7 @@ export default function Home({ searchParams }: PageProps) {
     : '1'
   return (
     <>
-      <MainImage img='/inf-88.jpg' title='J & A' />
+      <MainImage img='/gallery/inf-88.jpg' title='J & A' />
       <OurHistory />
       <Details />
       <CountDown />
@@ -28,11 +28,11 @@ export default function Home({ searchParams }: PageProps) {
       <DressCode />
       <Gallery
         images={[
-          '/inf-67.jpg',
-          '/inf-68.jpg',
-          '/inf-70.jpg',
-          '/inf-78.jpg',
-          '/inf-92.jpg',
+          '/gallery/inf-67.jpg',
+          '/gallery/inf-68.jpg',
+          '/gallery/inf-70.jpg',
+          '/gallery/inf-78.jpg',
+          '/gallery/inf-92.jpg',
         ]}
       />
       <Confirmation invites={invites} />

@@ -1,5 +1,29 @@
 import Image from 'next/image'
 
+interface DressColor {
+  src: string
+  alt: string
+}
+
+const colors: DressColor[] = [
+  {
+    src: '/code/black.png',
+    alt: 'code-black',
+  },
+  {
+    src: '/code/green.png',
+    alt: 'code-breen',
+  },
+  {
+    src: '/code/red.png',
+    alt: 'code-red',
+  },
+  {
+    src: '/code/blue.png',
+    alt: 'code-blue',
+  },
+]
+
 export function DressCode() {
   return (
     <div className='flex w-full flex-col items-center justify-center p-5 md:p-10'>
@@ -13,7 +37,7 @@ export function DressCode() {
             className='m-auto my-0 h-auto'
             alt='suit'
             width={65}
-            height={50}
+            height={40}
           />
         </div>
         <div className='w-1/2'>
@@ -28,10 +52,16 @@ export function DressCode() {
       </div>
       <div className='flex items-center'>
         <div className='flex flex-row flex-wrap content-between'>
-          <div className='m-2 h-10 w-10 rounded-3xl bg-black'></div>
-          <div className='m-2 h-10 w-10 rounded-3xl bg-blue-900'></div>
-          <div className='m-2 h-10 w-10 rounded-3xl bg-red-900'></div>
-          <div className='m-2 h-10 w-10 rounded-3xl bg-green-900'></div>
+          {colors.map((item) => (
+            <div className='relative m-2 h-10 w-10' key={item.alt}>
+              <Image
+                src={item.src}
+                alt={item.alt}
+                className='rounded-3xl'
+                fill
+              />
+            </div>
+          ))}
         </div>
       </div>
       <p>Colores sugeridos</p>

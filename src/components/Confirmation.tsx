@@ -12,7 +12,7 @@ function Button({ children, type, invites }: ButtonProps) {
   return (
     <Link
       href={`https://wa.me/52${phoneNumber}?text=${invites} lugares reservados - Boda Jaquelline y Abraham. Quiero confirmar la asistencia a la boda, anexo el nombre de las personas que asistirán para su registro, gracias`}
-      className='my-1 mr-2 rounded-md border-2 border-slate-300 px-1'
+      className='my-1 mr-2 rounded-md border-2 border-slate-300 p-1'
       target='_blank'
     >
       {children}
@@ -31,10 +31,12 @@ export function Confirmation({ invites }: ConfirmationProps) {
       <br />
       <p>Tu presencia es nuestro regalo mas grande</p>
       <Image src='/gift.png' alt='gift' className='' height={100} width={100} />
+      <br />
       <p>
         Si deseas obsequiarnos algun presente, agradeceriamos que fuera en
         efectivo
       </p>
+      <br />
       <Image
         src='/letter.svg'
         alt='letter'
@@ -42,8 +44,8 @@ export function Confirmation({ invites }: ConfirmationProps) {
         height={100}
         width={100}
       />
-      <p>Agradecemos confirmar tu asistencia antes del 9 de Agosto</p>
       <br />
+      <p>Agradecemos confirmar tu asistencia antes del 10 de Agosto</p>
       <p className=''>Pase para {invites} personas</p>
       <div className='flex flex-col md:flex-row'>
         <Button type='novia' invites={invites}>

@@ -16,7 +16,7 @@ export function OurHistory() {
         </p>
       </div>
       <Image
-        src='/inf-91.jpg'
+        src='/gallery/inf-91.jpg'
         alt='portada'
         quality={50}
         width={700}

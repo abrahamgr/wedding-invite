@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(metadataBase),
   openGraph: {
     ...baseMetadata,
-    images: '/_next/image?url=%2Finf-91.jpg&w=1200&q=50',
+    images: '/_next/image?url=%2Fgallery%2Finf-91.jpg&w=400&q=50',
   },
 }
 
@@ -54,7 +54,7 @@ export default async function RootLayout({
       <body
         className={`${generalFont.className} flex h-screen flex-col bg-yellow-50 md:items-center`}
       >
-        <main className='flex flex-col justify-center md:max-w-screen-xl'>
+        <main className='flex w-full flex-col justify-center xl:max-w-screen-xl'>
           {children}
         </main>
       </body>

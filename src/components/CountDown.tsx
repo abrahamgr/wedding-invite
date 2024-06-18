@@ -51,7 +51,7 @@ export function CountDown() {
     <div className='flex w-full flex-col items-center md:flex-row-reverse'>
       <div className='md:w-1/3'>
         <Image
-          src='/inf-75.jpg'
+          src='/gallery/inf-75.jpg'
           alt='img'
           sizes='(max-width: 768px) 100vw, 33vw'
           quality={50}
@@ -71,9 +71,9 @@ export function CountDown() {
             src='/stars.gif'
             alt='stars'
             unoptimized
-            width={700}
-            height={475}
-            className='absolute z-0 h-auto w-full'
+            width={500}
+            height={200}
+            className='absolute z-0 h-auto w-full max-w-screen-md'
           />
           <p className='z-10'>Cuenta regresiva</p>
           <p className='z-10 text-3xl'>
