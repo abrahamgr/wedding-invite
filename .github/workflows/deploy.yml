@@ -25,6 +25,5 @@ jobs:
         run: vercel build --prod
         env:
           APP_URL: https://boda-jaquelline-abraham.vercel.app
-          NEW_RELIC_ENABLED: false
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}

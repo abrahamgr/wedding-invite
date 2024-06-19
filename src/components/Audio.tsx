@@ -16,16 +16,16 @@ export function Audio() {
   }
 
   return (
-    <div className=''>
+    <div className='absolute right-[42%] top-[22%] cursor-pointer md:right-[48%] md:top-[60%]'>
       <Image
         alt='play-pause'
         src={isPlaying ? '/pause.svg' : '/play.svg'}
         height={40}
         width={40}
-        className='absolute right-[42%] top-[23%] cursor-pointer md:right-[48%] md:top-[60%]'
         onClick={handlePlayPause}
       />
       <audio src='/audio.mp3' ref={ref}></audio>
+      <span className='p-1 text-white'>{isPlaying ? 'Pause' : 'Play'}</span>
     </div>
   )
 }
