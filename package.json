@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NEW_RELIC_ENABLED=false next dev",
     "build": "next build",
     "start": "NODE_OPTIONS='-r @newrelic/next' next start",
     "lint": "next lint"

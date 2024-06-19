@@ -7,7 +7,7 @@ import Script from 'next/script'
 const isNewRelicEnabled = process.env.NEW_RELIC_ENABLED === 'true'
 const metadataBase =
   process.env.NODE_ENV === 'production'
-    ? `https://${process.env.VERCEL_URL}`
+    ? `https://${process.env.APP_URL}`
     : `http://localhost:${process.env.PORT || 3000}`
 
 const baseMetadata = {
