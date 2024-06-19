@@ -16,9 +16,7 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    serverComponentsExternalPackages: ['newrelic'],
-  },
+  poweredByHeader: false,
 }
 
 export default nextConfig

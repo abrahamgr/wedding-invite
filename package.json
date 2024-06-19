@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NEW_RELIC_ENABLED=false next dev",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_OPTIONS='-r @newrelic/next' next start",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@newrelic/next": "^0.9.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",

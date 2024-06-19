@@ -1,14 +1,12 @@
 import type { Metadata } from 'next'
-import newrelic from 'newrelic'
 import { generalFont } from '@/fonts'
 import './globals.css'
 import Script from 'next/script'
 
-const isNewRelicEnabled = process.env.NEW_RELIC_ENABLED === 'true'
-const metadataBase =
-  process.env.NODE_ENV === 'production'
-    ? `https://${process.env.APP_URL}`
-    : `http://localhost:${process.env.PORT || 3000}`
+const isProd = process.env.NODE_ENV === 'production'
+const metadataBase = isProd
+  ? (process.env.APP_URL as string)
+  : `http://localhost:${process.env.PORT || 3000}`
 
 const baseMetadata = {
   title: 'Jaquelline & Abraham',
@@ -29,26 +27,11 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  /**
-   * For SSG pages the build is faster than the agent connect cycle
-   * In those cases, let's wait for the agent to connect before getting
-   * the browser agent script.
-   */
-  if (isNewRelicEnabled && !newrelic.agent?.collector.isConnected()) {
-    await new Promise((resolve) => {
-      newrelic.agent.on('connected', resolve)
-    })
-  }
   return (
     <html lang='es'>
-      {isNewRelicEnabled ? (
+      {isProd ? (
         <head>
-          <Script id='nr' strategy='beforeInteractive'>
-            {newrelic.getBrowserTimingHeader({
-              hasToRemoveScriptWrapper: true,
-              allowTransactionlessInjection: true,
-            })}
-          </Script>
+          <Script strategy='beforeInteractive' src='/nr.js' />
         </head>
       ) : null}
       <body
