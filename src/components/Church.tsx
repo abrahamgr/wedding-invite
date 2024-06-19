@@ -18,7 +18,7 @@ export function Church() {
       </div>
       <div className='flex flex-col items-center justify-center px-5 py-7 text-center md:w-1/2 md:text-xl'>
         <p>Ceremonia</p>
-        <p>Templo Expiatorio ​de San Luis Gonzaga</p>
+        <p>Templo Expiatorio de San Luis Gonzaga</p>
         <p>Miguel Hidalgo y Costilla 280, Centro, Monterrey, N.L.</p>
         <p>5:20 pm </p>
         <br />

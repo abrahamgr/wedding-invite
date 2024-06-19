@@ -33,7 +33,7 @@ export function Confirmation({ invites }: ConfirmationProps) {
       <Image src='/gift.png' alt='gift' className='' height={100} width={100} />
       <br />
       <p>
-        Si deseas obsequiarnos algun presente, agradeceriamos que fuera en
+        Si deseas obsequiarnos algún presente, agradeceríamos que fuera en
         efectivo
       </p>
       <br />

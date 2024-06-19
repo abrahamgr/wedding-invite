@@ -12,7 +12,7 @@ const metadataBase =
 
 const baseMetadata = {
   title: 'Jaquelline & Abraham',
-  description: 'Estás invitado a nuestra boda',
+  description: 'Nuestra boda',
 }
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(metadataBase),
   openGraph: {
     ...baseMetadata,
-    images: '/_next/image?url=%2Fgallery%2Finf-91.jpg&w=400&q=50',
+    images: '/_next/image?url=/gallery/inf-91.jpg&w=750&q=50',
   },
 }
 
